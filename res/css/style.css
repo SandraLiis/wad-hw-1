@@ -1,3 +1,8 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+
 .profile-icon {
     width: 3rem;
     height: 3rem;
@@ -5,21 +10,87 @@
     font-size: 5rem ;
 }
 
+a {
+    text-decoration: none;
+}
+
 .header .nav-link {
     color: #000000;
-    text-decoration: none;
     font-family: system-ui, sans-serif;
     font-weight: 600;
-    font-size:xx-large;    
+    font-size:xx-large;
+    border-style: solid;
+    border-width: 6px; 
+    border-radius: 6px;
+    border-color: #d2d2d5;
     }
+
+.header .nav-link:hover {
+    background-color: #c0c0c3;
+    border-color: #c0c0c3;
+
+}
 
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: lightgray;
+    background-color: #d2d2d5;
+    /* background-color: #e7e7ea; */
+    /* background-color: #f1f1f1; */
     border-radius: 9px;
     padding-right: 2%;
     padding-left: 2%;
     padding-bottom: 1%;
     padding-top: 1%;
 }
+
+.login-main,
+.login-box,
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.login-box {
+    margin-top: 30px;
+    background-color: #f1f1f3;
+    border-style: solid;
+    border-width: 6px 3rem 1.5rem; 
+    border-radius: 11px;
+    border-color: #f1f1f3;
+}
+
+.login-box * {
+    font-size: large;
+    font-weight: 550;
+}
+
+.login-button {
+    color: white;
+    background-color: #1f477d;
+    border-style: solid;
+    border-width: 4px 1rem 4px; 
+    border-radius: 1px;
+    border-color: #1f477d;
+}
+
+.acc-action {
+    color: #31b9eb;
+}
+
+.login-input {
+    border-style: solid;
+    border-color: white;
+    border-width: 0.9rem;
+}
+
+.pre-formated {
+    white-space: pre-line;
+    text-align: center;
+
+
+}
+
