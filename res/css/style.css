@@ -77,8 +77,18 @@ a {
     border-color: #1f477d;
 }
 
+.login-button:hover {
+    box-shadow: 0 0 8px #31b9eb;
+    background-color: #183d6d;
+    border-color: #183d6d;
+}
+
 .acc-action {
     color: #31b9eb;
+}
+
+.acc-action:hover {
+    color: #289bc5;
 }
 
 .login-input {
@@ -87,10 +97,10 @@ a {
     border-width: 0.9rem;
 }
 
+
+
 .pre-formated {
     white-space: pre-line;
     text-align: center;
-
-
 }
 
