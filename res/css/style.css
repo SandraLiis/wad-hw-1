@@ -75,6 +75,7 @@ a {
     border-width: 4px 1rem 4px; 
     border-radius: 1px;
     border-color: #1f477d;
+    cursor: pointer;
 }
 
 .login-button:hover {
@@ -97,12 +98,14 @@ a {
     border-width: 0.9rem;
 }
 
-
-
 .pre-formated {
     white-space: pre-line;
     text-align: center;
 }
+
+
+
+
 
 /* Add post page CSS*/
 
