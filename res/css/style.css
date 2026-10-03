@@ -50,6 +50,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 2%;
+    gap: 4px;
 }
 
 .login-box {
@@ -163,7 +164,7 @@ a {
     box-shadow: 0 0 8px #31b9eb;
 }
 
-/* Asjacent sibling combinator */
+/* Adjacent sibling combinator */
 .post + .post {
     max-width: 500px;
 }
