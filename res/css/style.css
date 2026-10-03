@@ -163,6 +163,21 @@ a {
     box-shadow: 0 0 8px #31b9eb;
 }
 
+/* Asjacent sibling combinator */
+.post + .post {
+    max-width: 500px;
+}
+
+/* General sibling combinator */
+
+article ~ footer {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #a2a2a2;
+    width: 80%;
+}
+
 /* Post boxes */
 main {
     display:flex;
@@ -177,7 +192,7 @@ main {
     border-radius: 10px;
     padding: 15px;
     width: 100%;
-    max-width: 500px;
+    max-width: 550px;
 }
 
 .post img {
