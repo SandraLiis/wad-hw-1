@@ -10,6 +10,13 @@
     font-size: 5rem ;
 }
 
+
+/* pseudo-class */
+/* Descendant combinator */
+.login-link .profile-icon:hover {
+    color: rgb(150, 150, 150);
+}
+
 a {
     text-decoration: none;
 }
@@ -127,6 +134,8 @@ a {
     flex-direction: column;
     gap: 1rem;
 }
+
+/* Child combinator */
 
 .add-post-form > label {
     font-size: large;
