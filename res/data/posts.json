@@ -1,14 +1,9 @@
-[{
-    "created": "Feb 02.2026",
-    "user": "Julia Jass",
-    "image" : "assets/img/skating.jpg",
-    "message": "Spent the morning skating!"
-},
+[
 {
-   "created": "Jun 01.2026",
-    "user": "Kristel Kala",
-    "image" : "assets/img/canoe.jpg",
-    "message": "A peaceful morning on the water" 
+   "created": "Aug 07.2026",
+    "user": "Lennart Laas",
+    "image": null,
+    "message": "It's friday!"
 },
 {
     "created": "Jun 22.2026",
@@ -17,10 +12,16 @@
     "message": "Took this from my kitchen window just now"
 },
 {
-   "created": "Aug 07.2026",
-    "user": "Lennart Laas",
-    "image": null,
-    "message": "It's friday!"
+   "created": "Jun 01.2026",
+    "user": "Kristel Kala",
+    "image" : "assets/img/canoe.jpg",
+    "message": "A peaceful morning on the water" 
+},
+{
+    "created": "Feb 02.2026",
+    "user": "Julia Jass",
+    "image" : "assets/img/skating.jpg",
+    "message": "Spent the morning skating!"
 }
 ]
 
