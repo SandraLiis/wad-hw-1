@@ -1,20 +1,27 @@
 [{
     "created": "Feb 02.2026",
     "user": "Julia Jass",
-    "image" : "https://visittartu.com/wp-content/uploads/ve/2026/10/tartu-raekoja-platsi-uisuvaljak-009-visit-estonia.jpg",
-    "message": "Spent the morning skating today!"
-},
-{
-    "created": "Jun 22.2026",
-    "user": "Siim Sirel",
-    "image" : "https://visittartu.com/wp-content/uploads/ve/2026/09/kaatrisoit-ahja-joel-emajoel-ja-peipsil-008-visit-estonia-scaled.jpg",
-    "message": "Boat season is officially here!"
+    "image" : "assets/img/skating.jpg",
+    "message": "Spent the morning skating!"
 },
 {
    "created": "Jun 01.2026",
     "user": "Kristel Kala",
-    "image" : "https://visittartu.com/wp-content/uploads/ve/2026/09/Start-Ahijarvel.jpg",
+    "image" : "assets/img/canoe.jpg",
     "message": "A peaceful morning on the water" 
-}]
+},
+{
+    "created": "Jun 22.2026",
+    "user": "Siim Sirel",
+    "image" : "assets/img/foggy.jpg",
+    "message": "Took this from my kitchen window just now"
+},
+{
+   "created": "Aug 07.2026",
+    "user": "Lennart Laas",
+    "image": null,
+    "message": "It's friday!"
+}
+]
 
 
