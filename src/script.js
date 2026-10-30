@@ -1,7 +1,8 @@
 window.onload = function() {
 
 
-fetch('https://api.npoint.io/00439ada556eb3b171e0')
+// fetch('https://api.npoint.io/00439ada556eb3b171e0') // fetching from URI of endpoint
+fetch('res/data/posts.json') // fetching locally
     .then((response) => response.json())
     .then(json => {
         console.log(json);
@@ -42,9 +43,5 @@ fetch('https://api.npoint.io/00439ada556eb3b171e0')
         }
 
     })
-
-
-
-
 
 }
