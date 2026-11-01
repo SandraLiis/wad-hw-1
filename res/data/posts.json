@@ -22,6 +22,24 @@
     "user": "Julia Jass",
     "image" : "assets/img/skating.jpg",
     "message": "Spent the morning skating!"
+},
+{
+    "created": "May 07.2026",
+    "user": "KJ",
+    "image" : null,
+    "message": "I have spent ONE year in this city!"
+},
+{
+   "created": "Jun 21.2026",
+    "user": "Kristel Kala",
+    "image" : "/assets/img/summer.jpg",
+    "message": "Summer is awesome WOOOOOO!" 
+},
+{
+    "created": "Feb 24.2026",
+    "user": "Julia Jass",
+    "image" : "/assets/img/independenceDay.jpg",
+    "message": "Independents day woooooo! ESTONIA!"
 }
 ]
 
