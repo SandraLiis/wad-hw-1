@@ -22,7 +22,26 @@
     "user": "Julia Jass",
     "image" : "assets/img/skating.jpg",
     "message": "Spent the morning skating!"
+},
+{
+    "created": "Sep 01.2026",
+    "user": "Jakub Tamm",
+    "image" : "assets/img/TartuUniversity.jpg",
+    "message": "Last year of university, LET'S GOOO!!"
+},
+{
+    "created": "Oct 12.2026",
+    "user": "Mari-Liis Kardek",
+    "image" : "assets/img/autumnpark.jpg",
+    "message": "Lovely autumn morning walk in Tartu! <3"
+},
+{
+    "created": "Nov 1.2026",
+    "user": "Jaanus Rein",
+    "image": null,
+    "message": "Already November?! Only 53 days until Christmas!"
 }
 ]
+
 
 
