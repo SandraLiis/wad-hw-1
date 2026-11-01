@@ -8,6 +8,9 @@ fetch('res/data/posts.json') // fetching locally
         console.log(json);
         let posts_container = document.getElementsByClassName("posts-container")[0]
 
+        //Sorteerimine
+        json.sort((a, b) => new Date(b.created.replace('.', ',')) - new Date(a.created.replace('.', ',')));
+
         for (let i = 0; i < json.length; i++){
             let post = document.createElement("article");
             post.classList.add("post")
@@ -41,7 +44,5 @@ fetch('res/data/posts.json') // fetching locally
             post.append(header, post_body)
             posts_container.append(post)
         }
-
     })
-
 }
