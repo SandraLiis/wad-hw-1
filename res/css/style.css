@@ -234,3 +234,60 @@ main {
     /* align-items: center; */
 
 }
+
+/* HW 2 - Profile dropdown */
+
+.profile-menu {
+    position: relative;
+}
+
+#profile-button {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile-button .profile-icon {
+    width: 3rem;
+    height: 3rem;
+    color: gray;
+}
+
+#profile-button:hover .profile-icon {
+    color: rgb(150, 150, 150);
+}
+
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 200px;
+    padding: 15px;
+    background-color: #f1f1f3;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.profile-dropdown.show {
+    display: block;
+}
+
+.profile-dropdown p {
+    margin: 8px 0;
+}
+
+.profile-dropdown a {
+    display: block;
+    padding: 8px 0;
+    color: #1f477d;
+}
+
+.profile-dropdown a:hover {
+    color: #31b9eb;
+}
