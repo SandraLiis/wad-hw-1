@@ -3,10 +3,21 @@
     box-sizing: border-box;
   }
 
+html {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #000000 0%, #2d0437 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
 .profile-icon {
     width: 3rem;
     height: 3rem;
-    color: gray;
     font-size: 5rem ;
 }
 
@@ -22,18 +33,16 @@ a {
 }
  
 .header .nav-link {
-    color: #000000;
+    color: #ffffff;
     font-family: system-ui, sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
-    border-style: solid;
-    border-width: 6px; 
-    border-radius: 6px;
-    border-color: #d2d2d5;
-    }
+    background-color: transparent;
+    border: none;
+}
 
 .header .nav-link:hover {
-    background-color: #c0c0c3;
+    background-color: transparent;
     border-color: #c0c0c3;
 
 }
@@ -42,17 +51,19 @@ a {
     display: flex;
     width: 95%;
     justify-content: space-between;
-    background-color: #d2d2d5;
     align-items: center;
     margin: 0 auto;
-    /* background-color: #e7e7ea; */
-    /* background-color: #f1f1f1; */
-    border-radius: 9px;
+    background: transparent;
     padding: 0.8rem 2%;
+    color: #ffffff;
 }
 
-.header a {
-    color: inherit;
+.header a,
+.header svg,
+.plus-icon,
+.profile-icon {
+    color: #ffffff;
+    fill: #ffffff;
     text-decoration: none;
 }
 
@@ -209,11 +220,12 @@ main {
 }
 
 .post {
-    background-color: #c4c4c4;
+    background-color: rgb(25, 25, 25);
     border-radius: 10px;
     padding: 15px;
     width: 100%;
     max-width: 550px;
+    color: white;
 }
 
 .post img {
@@ -233,10 +245,15 @@ main {
 .posts-container ~ footer {
     display: flex;
     justify-content: center;
-    border-radius: 10px;
-    background-color: #a2a2a2;
-    width: 80%;
+    align-items: center;
+    border-radius: 12px;
+    width: 100%;
     align-self: center;
+    color: #afafaf;
+    padding: 20px 0;
+    background: linear-gradient(0deg, rgba(45, 4, 55, 0.6) 0%, rgba(15, 10, 25, 0.8) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
 }
 
 .index-body {
@@ -297,5 +314,5 @@ main {
 .profile-icon {
     width: 3rem;
     height: 3rem;
-    color: gray;
+    fill: #ffffff;
 }
