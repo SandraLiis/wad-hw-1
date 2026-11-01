@@ -1,70 +1,92 @@
+/* 1. The general style */
+
 * {
     font-family: "Redaction 35", serif;
     box-sizing: border-box;
-  }
+}
 
 html {
     min-height: 100vh;
-    background: linear-gradient(180deg, #000000 0%, #2d0437 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #d4d0c8;
 }
 
 body {
     margin: 0;
     min-height: 100vh;
-}
-
-.profile-icon {
-    width: 3rem;
-    height: 3rem;
-    font-size: 5rem ;
-}
-
-
-/* pseudo-class */
-/* Descendant combinator */
-.login-link .profile-icon:hover {
-    color: rgb(150, 150, 150);
+    color: #000000;
 }
 
 a {
     text-decoration: none;
 }
- 
-.header .nav-link {
-    color: #ffffff;
-    font-family: system-ui, sans-serif;
-    font-weight: 600;
-    font-size: 1.5rem;
-    background-color: transparent;
-    border: none;
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
 }
 
-.header .nav-link:hover {
-    background-color: transparent;
-    border-color: #c0c0c3;
-
+.post,
+.login-box,
+.add-post-box {
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #808080;
+    border-bottom: 2px solid #808080;
+    padding: 15px;
 }
+
+.login-input,
+.add-post-form textarea {
+    background-color: #ffffff;
+    font-family: monospace;
+    border-top: 2px solid #808080;
+    border-left: 2px solid #808080;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding: 8px;
+    width: 100%;
+}
+
+.login-button,
+.post-button {
+    background-color: #c0c0c0;
+    font-family: "Redaction 35", serif;
+    font-weight: bold;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    padding: 6px 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.login-button:active,
+.post-button:active {
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding: 7px 15px 5px 17px;
+}
+
+/* 2. NAVBAR / HEADER */
 
 .header {
     display: flex;
     width: 95%;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    background: transparent;
+    margin: 10px auto 0;
+    background-color: #90e1fb;
     padding: 0.8rem 2%;
-    color: #ffffff;
-}
-
-.header a,
-.header svg,
-.plus-icon,
-.profile-icon {
-    color: #ffffff;
-    fill: #ffffff;
-    text-decoration: none;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #808080;
+    border-bottom: 2px solid #808080;
 }
 
 .header,
@@ -72,204 +94,23 @@ a {
     font-family: "Redaction 35", serif;
 }
 
-.login-main,
-.login-box,
-.login-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2%;
-    gap: 4px;
+.header a,
+.header svg,
+.plus-icon,
+.profile-icon {
+    color: #000000;
+    fill: #000000;
 }
 
-.login-box {
-    margin-top: 30px;
-    background-color: #f1f1f3;
-    border-style: solid;
-    border-width: 6px 3rem 1.5rem; 
-    border-radius: 11px;
-    border-color: #f1f1f3;
+.logo-link {
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 0px #ffffff;
 }
-
-.login-box * {
-    font-size: large;
-    font-weight: 550;
-}
-
-.login-button {
-    color: white;
-    background-color: #1f477d;
-    border-style: solid;
-    border-width: 4px 1rem 4px; 
-    border-radius: 1px;
-    border-color: #1f477d;
-    cursor: pointer;
-}
-
-.login-button:hover {
-    box-shadow: 0 0 8px #31b9eb;
-    background-color: #183d6d;
-    border-color: #183d6d;
-}
-
-.acc-action {
-    color: #31b9eb;
-}
-
-.acc-action:hover {
-    color: #289bc5;
-}
-
-.login-input {
-    border-style: solid;
-    border-color: white;
-    border-width: 0.9rem;
-}
-
-.pre-formated {
-    white-space: pre-line;
-    text-align: center;
-}
-
-
-
-
-
-/* Add post page CSS*/
-
-.add-post-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-}
-
-.add-post-box {
-    background-color: #f1f1f3;
-    padding: 2rem;
-    margin-top: 30px;
-    border-radius: 11px;
-}
-
-.add-post-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-/* Child combinator */
-
-.add-post-form > label {
-    font-size: large;
-    font-weight: 550;
-    text-align: center;
-}
-.add-post-box h1 {
-    text-align: center;
-    font-size: 25px;
-    margin-top: 0;
-}
-.add-post-form textarea {
-    width: 250px;
-    height: 120px;
-    padding: 10px;
-    resize: vertical;
-}
-
-.add-post-form input[type="file"] {
-    align-self: center;
-    width: 200px;
-}
-
-.post-button {
-    align-self: center;
-    color: white;
-    background-color: #1f477d;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.post-button:hover {
-    background-color: #183d6d;
-    box-shadow: 0 0 8px #31b9eb;
-}
-
-/* Adjacent sibling combinator */
-.post + .post {
-    max-width: 500px;
-}
-
-/* General sibling combinator */
-/* article ~ footer {
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    background-color: #a2a2a2;
-    width: 80%;
-} */
-
-/* Post boxes */
-main {
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px 0;
-}
-
-.post {
-    background-color: rgb(25, 25, 25);
-    border-radius: 10px;
-    padding: 15px;
-    width: 100%;
-    max-width: 550px;
-    color: white;
-}
-
-.post img {
-    width: 100%;
-    border-radius: 6px;
-    display:block;
-    margin: 10px 0;
-}
-
-/* hw 2 */
-.post header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.posts-container ~ footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    width: 100%;
-    align-self: center;
-    color: #afafaf;
-    padding: 20px 0;
-    background: linear-gradient(0deg, rgba(45, 4, 55, 0.6) 0%, rgba(15, 10, 25, 0.8) 100%);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(8px);
-}
-
-.index-body {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    /* align-items: center; */
-
-}
-
-
-/* Styling time */
 
 .add-post-nav-link,
 .login-link {
-    flex: 1;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -279,14 +120,9 @@ main {
 .add-post-nav-link { justify-content: flex-start; }
 .login-link { justify-content: flex-end; }
 
-.login-link {
-    justify-content: flex-end;
-}
-
-.logo-link {
-    font-size: 2.2rem;
-    font-weight: 700;
-    text-align: center;
+.profile-icon, .plus-icon {
+    width: 2rem;
+    height: 2rem;
 }
 
 .add-post-text,
@@ -306,13 +142,129 @@ main {
     .logo-link { font-size: 2.5rem; }
 }
 
-.add-post-nav-link {
-    justify-content: flex-start;
+/* 3. LOGIN PAGE */
+
+.login-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
 }
 
-.plus-icon,
-.profile-icon {
-    width: 3rem;
-    height: 3rem;
-    fill: #ffffff;
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 10px;
+    background-color: #ffb6c1;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box h1 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+/* 4. ADD POST PAGE */
+
+.add-post-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.add-post-box {
+    background-color: #add8e6;
+    padding: 2rem;
+    width: 100%;
+    max-width: 450px;
+}
+
+.add-post-box h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.add-post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-post-form > label {
+    font-size: large;
+    font-weight: 550;
+}
+
+.add-post-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.add-post-form input[type="file"] {
+    align-self: flex-start;
+}
+
+.post-button {
+    align-self: center;
+    margin-top: 10px;
+}
+
+/* 5. POSTS */
+
+.posts-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.post {
+    background-color: #ffebf0;
+    width: 100%;
+    max-width: 550px;
+}
+
+/* The trick to make the second one different colour */
+.post:nth-child(even) {
+    background-color: #e6f7ff;
+}
+
+.post header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #808080;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+    font-family: monospace;
+}
+
+.post img {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #000000;
+    padding: 20px 0;
+    font-family: monospace;
 }
