@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="src/script.js"></script>
     <link rel="stylesheet" href="res/css/style.css">
-    <title>Add post</title>
+    <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Redaction+35:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">  
@@ -26,13 +27,21 @@
         <a class="logo-link" href="index.html">ComMITS</a>
 
         <div class="nav-right">
-            <a class="login-link" href="login.html">
-                <svg class="profile-icon bi bi-person-circle" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                </svg>
-                <span class="account-text">Account</span>
-            </a>
+            <div class="profile-menu">
+                <button id="profile-button" type="button" aria-label="Profile menu" aria-expanded="false">
+                    <span class="account-text">Account</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle profile-icon" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                    </svg>
+                </button>
+
+                <div id="profile-dropdown" class="profile-dropdown">
+                    <p>John Doe</p>
+                    <p>john.doe@ut.ee</p>
+                    <a href="login.html">Logout</a>
+                </div>
+            </div>
         </div>
     </header>
 

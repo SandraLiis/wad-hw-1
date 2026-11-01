@@ -1,5 +1,15 @@
 window.onload = function() {
 
+    // HW 2 - Profile Dropdown
+    const profileButton = document.getElementById("profile-button");
+    const profileDropdown = document.getElementById("profile-dropdown");
+
+    profileButton.addEventListener("click", function() {
+        profileDropdown.classList.toggle("show");
+
+        const isOpen = profileDropdown.classList.contains("show");
+        profileButton.setAttribute("aria-expanded", isOpen);
+    });
 
 // fetch('https://api.npoint.io/00439ada556eb3b171e0') // fetching from URI of endpoint
 fetch('res/data/posts.json') // fetching locally
