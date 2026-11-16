@@ -1,0 +1,65 @@
+{
+"Posts": [
+{
+   "created": "Aug 07.2026",
+    "user": "Lennart Laas",
+    "image": null,
+    "message": "It's friday!"
+},
+{
+    "created": "Jun 22.2026",
+    "user": "Siim Sirel",
+    "image" : "/img/foggy.jpg",
+    "message": "Took this from my kitchen window just now"
+},
+{
+   "created": "Jun 01.2026",
+    "user": "Kristel Kala",
+    "image" : "/img/canoe.jpg",
+    "message": "A peaceful morning on the water" 
+},
+{
+    "created": "Feb 02.2026",
+    "user": "Julia Jass",
+    "image" : "/img/skating.jpg",
+    "message": "Spent the morning skating!"
+},
+{
+    "created": "May 07.2026",
+    "user": "KJ",
+    "image" : null,
+    "message": "I have spent ONE year in this city!"
+},
+{
+   "created": "Jun 21.2026",
+    "user": "Kristel Kala",
+    "image" : "/img/summer.jpg",
+    "message": "Summer is awesome WOOOOOO!" 
+},
+{
+    "created": "Feb 24.2026",
+    "user": "Julia Jass",
+    "image" : "/img/independenceDay.jpg",
+    "message": "Independence day woooooo! ESTONIA!"
+},
+{
+    "created": "Sep 01.2026",
+    "user": "Jakub Tamm",
+    "image" : "/img/TartuUniversity.jpg",
+    "message": "Last year of university, LET'S GOOO!!"
+},
+{
+    "created": "Oct 12.2026",
+    "user": "Mari-Liis Kardek",
+    "image" : "/img/autumnpark.jpg",
+    "message": "Lovely autumn morning walk in Tartu! <3"
+},
+{
+    "created": "Nov 1.2026",
+    "user": "Jaanus Rein",
+    "image": null,
+    "message": "Already November?! Only 53 days until Christmas!"
+}
+    
+    ]
+}

@@ -3,60 +3,70 @@
    "created": "Aug 07.2026",
     "user": "Lennart Laas",
     "image": null,
-    "message": "It's friday!"
+    "message": "It's friday!",
+    "likes": 13
 },
 {
     "created": "Jun 22.2026",
     "user": "Siim Sirel",
     "image" : "/img/foggy.jpg",
-    "message": "Took this from my kitchen window just now"
+    "message": "Took this from my kitchen window just now",
+    "likes": 8
 },
 {
    "created": "Jun 01.2026",
     "user": "Kristel Kala",
     "image" : "/img/canoe.jpg",
-    "message": "A peaceful morning on the water" 
+    "message": "A peaceful morning on the water",
+    "likes": 21 
 },
 {
     "created": "Feb 02.2026",
     "user": "Julia Jass",
     "image" : "/img/skating.jpg",
-    "message": "Spent the morning skating!"
+    "message": "Spent the morning skating!",
+    "likes": 22
 },
 {
     "created": "May 07.2026",
     "user": "KJ",
     "image" : null,
-    "message": "I have spent ONE year in this city!"
+    "message": "I have spent ONE year in this city!",
+    "likes": 23
 },
 {
    "created": "Jun 21.2026",
     "user": "Kristel Kala",
     "image" : "/img/summer.jpg",
-    "message": "Summer is awesome WOOOOOO!" 
+    "message": "Summer is awesome WOOOOOO!",
+    "likes": 24 
 },
 {
     "created": "Feb 24.2026",
     "user": "Julia Jass",
     "image" : "/img/independenceDay.jpg",
-    "message": "Independence day woooooo! ESTONIA!"
+    "message": "Independence day woooooo! ESTONIA!",
+    "likes": 25
 },
 {
     "created": "Sep 01.2026",
     "user": "Jakub Tamm",
     "image" : "/img/TartuUniversity.jpg",
-    "message": "Last year of university, LET'S GOOO!!"
+    "message": "Last year of university, LET'S GOOO!!",
+    "likes": 26
 },
 {
     "created": "Oct 12.2026",
     "user": "Mari-Liis Kardek",
     "image" : "/img/autumnpark.jpg",
-    "message": "Lovely autumn morning walk in Tartu! <3"
+    "message": "Lovely autumn morning walk in Tartu! <3",
+    "likes": 27
 },
 {
     "created": "Nov 1.2026",
     "user": "Jaanus Rein",
     "image": null,
-    "message": "Already November?! Only 53 days until Christmas!"
+    "message": "Already November?! Only 53 days until Christmas!",
+    "likes": 28
 }
 ]

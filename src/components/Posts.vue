@@ -13,14 +13,27 @@
 </template>
 
 <script>
-import postsData from '@/assets/posts.json'
+//import postsData from '@/assets/posts.json'
+
+// export default {
+//   name: 'PostsList',
+//   data() {
+//     return {
+//       posts: postsData
+//     }
+//   }
+// }
 
 export default {
-  name: 'PostsList',
-  data() {
-    return {
-      posts: postsData
+    name: 'PostsList',
+    computed: {
+        posts() {
+            return this.$store.state.posts
+        }
+    },
+
+    mounted() {
+        this.$store.dispatch('fetchPosts')
     }
-  }
 }
 </script>
