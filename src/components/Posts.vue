@@ -53,6 +53,16 @@ export default {
 <style scoped>
   .thumb {
     font-size:x-large;
+    border:none;
+  }
+
+  .thumb:hover {
+    background-color: #90e1fb;
+    /* padding: 0.8rem 2%; */
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #808080;
+    border-bottom: 2px solid #808080;
   }
 
   .likes {
