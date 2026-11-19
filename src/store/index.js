@@ -9,13 +9,35 @@ export default createStore({
   },
   mutations: {
     setPosts: (state, posts) => {
-            state.posts = posts
+            state.posts = posts;
         },
         // equiv:
     // setPostsAlt(state, posts) {
     //   state.posts = posts
     // }
-    
+
+      increaseLikeCount: (state, postId) => {
+        // The find() method takes a function as an argument
+        // and executes it for each element until the function
+        // returns true. It then returns that element.
+        const post = state.posts.find(function(post) {
+          return post.id === postId
+        });
+
+        // console.log("found post: ", post)
+
+        if (post) {
+          post.likes += 1;
+        }
+        
+      },
+      resetLikes: state => {
+        state.posts.forEach(post => {
+          post.likes = 0;
+        })
+      }
+        
+
   },
   actions: {
     // Fetching the data
@@ -33,8 +55,16 @@ export default createStore({
     //       .catch(err => console.log(err.message))
     // },
     // Using imported data
-    fetchPosts: act => {
+    getPosts: act => {
         act.commit('setPosts', postsData)
+    },
+
+
+    increaseLikeCountAct: (act, postId) => {
+        act.commit("increaseLikeCount", postId)
+    },
+    resetLikesAct: act => {
+        act.commit("resetLikes")
     }
 
   },

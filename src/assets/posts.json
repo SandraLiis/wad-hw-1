@@ -1,12 +1,14 @@
 [
 {
-   "created": "Aug 07.2026",
+    "id": 0,
+    "created": "Aug 07.2026",
     "user": "Lennart Laas",
     "image": null,
     "message": "It's friday!",
     "likes": 13
 },
 {
+    "id": 1,
     "created": "Jun 22.2026",
     "user": "Siim Sirel",
     "image" : "/img/foggy.jpg",
@@ -14,13 +16,15 @@
     "likes": 8
 },
 {
-   "created": "Jun 01.2026",
+    "id": 2,
+    "created": "Jun 01.2026",
     "user": "Kristel Kala",
     "image" : "/img/canoe.jpg",
     "message": "A peaceful morning on the water",
     "likes": 21 
 },
 {
+    "id": 3,
     "created": "Feb 02.2026",
     "user": "Julia Jass",
     "image" : "/img/skating.jpg",
@@ -28,6 +32,7 @@
     "likes": 22
 },
 {
+    "id": 4,
     "created": "May 07.2026",
     "user": "KJ",
     "image" : null,
@@ -35,13 +40,15 @@
     "likes": 23
 },
 {
-   "created": "Jun 21.2026",
+    "id": 5,
+    "created": "Jun 21.2026",
     "user": "Kristel Kala",
     "image" : "/img/summer.jpg",
     "message": "Summer is awesome WOOOOOO!",
     "likes": 24 
 },
 {
+    "id": 6,
     "created": "Feb 24.2026",
     "user": "Julia Jass",
     "image" : "/img/independenceDay.jpg",
@@ -49,6 +56,7 @@
     "likes": 25
 },
 {
+    "id": 7,
     "created": "Sep 01.2026",
     "user": "Jakub Tamm",
     "image" : "/img/TartuUniversity.jpg",
@@ -56,6 +64,7 @@
     "likes": 26
 },
 {
+    "id": 8,
     "created": "Oct 12.2026",
     "user": "Mari-Liis Kardek",
     "image" : "/img/autumnpark.jpg",
@@ -63,6 +72,7 @@
     "likes": 27
 },
 {
+    "id": 9,
     "created": "Nov 1.2026",
     "user": "Jaanus Rein",
     "image": null,

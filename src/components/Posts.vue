@@ -1,13 +1,20 @@
 <template>
   <div class="posts-container">
-    <div v-for="(post, index) in posts" :key="index" class="post">
+    <div v-for="post in posts" :key="post.id" class="post">
       <header>
-        <span class="post-author">{{ post.user }}</span>
+        <span>
+          <span>👤</span>
+          <span class="post-author">{{ post.user }}</span>
+        </span>
         <span class="post-date">{{ post.created }}</span>
       </header>
       
       <img v-if="post.image" :src="post.image" alt="Post image" class="post-image" />
       <p class="post-body">{{ post.message }}</p>
+      <div class="likes">
+        <button class="thumb" v-on:click="increaseLikeCount(post.id)">👍</button>
+        <span class="nr-of-likes">{{ post.likes }} likes</span>
+      </div>
     </div>
   </div>
 </template>
@@ -31,9 +38,25 @@ export default {
             return this.$store.state.posts
         }
     },
+    methods: {
+    increaseLikeCount: function(postId) {
+      this.$store.dispatch("increaseLikeCountAct", postId)
+    }
+    },
 
     mounted() {
-        this.$store.dispatch('fetchPosts')
+        this.$store.dispatch('getPosts')
     }
 }
 </script>
+
+<style scoped>
+  .thumb {
+    font-size:x-large;
+  }
+
+  .likes {
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
